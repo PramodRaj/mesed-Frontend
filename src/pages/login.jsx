@@ -44,7 +44,7 @@ class Login extends Component {
         this.setState({person:res.user_id, loading: false})
         window.localStorage.setItem('user_id', res.user_id)
         window.localStorage.setItem('token_id', res.token_id)
-        this.props.history.push('/header')
+        this.props.history.push('/artist')
       }
       else{
         alert("worng");

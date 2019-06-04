@@ -39,10 +39,10 @@ export default class header extends Component {
         <div id="left-side" className="left-side sticky-left-side">
 
 <div className="logo">
-    <h1><a href="index.html">Mosai<span>c</span></a></h1>
+    <h1><a href="index.html">OneCle<span>f</span></a></h1>
 </div>
 <div className="logo-icon text-center">
-    <a href="index.html">M </a>
+    <a href="index.html">O </a>
 </div>
 <div class="main-content">
 			<div class="header-section">
@@ -60,7 +60,7 @@ export default class header extends Component {
             <li className="active"><a href="index.html"><i className="lnr lnr-home" ></i><span>Home</span></a></li>
             <li><a href="radio.html"><i className="camera"></i> <span>Radio</span></a></li>
             <li><a href="#" data-toggle="modal" data-target="#myModal1"><i className="fa fa-th"></i><span>Apps</span></a></li>
-            <li><a href="radio.html"><i className="lnr lnr-users"></i> <span>Artists</span></a></li> 
+            <li><a href="/upload"><i className="lnr lnr-users"></i> <span>Artists</span></a></li> 
             <li><a href="browse.html"><i className="lnr lnr-music-note"></i> <span>Albums</span></a></li>						
             <li className="menu-list"><a href="browse.html"><i className="lnr lnr-indent-increase"></i> <span>Browser</span></a>  
                 <ul className="sub-menu-list">
@@ -68,7 +68,7 @@ export default class header extends Component {
                     <li><a href="404.html">Services</a> </li>
                 </ul>
             </li>
-            <li><a href="blog.html"><i className="lnr lnr-book"></i><span>Blog</span></a></li>
+            <li><a href=""><i className="lnr lnr-book"></i><span>Blog</span></a></li>
             <li><a href="typography.html"><i className="lnr lnr-pencil"></i> <span>Typography</span></a></li>
             <li className="menu-list"><a href="#"><i className="lnr lnr-heart"></i>  <span>My Favourities</span></a> 
                 <ul className="sub-menu-list">

@@ -37,7 +37,7 @@ class person extends React.Component{
     
         };
         const user_id= window.localStorage.getItem('user_id')
-        const url =`http://localhost:3000/api/v1/artist/${user_id}`;
+        const url =`http://localhost:3030/api/v1/artist/${user_id}`;
         const request = new Request(url, option);
         const response = await fetch(request);
         const res = await response.json();

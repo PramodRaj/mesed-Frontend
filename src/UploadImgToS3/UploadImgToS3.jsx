@@ -27,12 +27,20 @@ singleFileUploadHandler = ( event ) => {
   const data = new FormData();
 // If file selected
   if ( this.state.selectedFile ) {
+    let bodyq =  ({
+        'description':'xyz',
+        'genre': 'rock'
+      })
 data.append( 'profileImage', this.state.selectedFile, this.state.selectedFile.name );
-axios.post( 'http://localhost:3030/api/v1/artist/artistId/album/song/upload', data, {
+data.append('album_id', '1');
+data.append('songName', 'jack',);
+data.append('artist_id', '36df28e0-788c-11e9-bf82-db22f89ba3a5');
+data.append('song', JSON.stringify(bodyq))
+axios.post( 'http://localhost:3000/api/v1/artist/36df28e0-788c-11e9-bf82-db22f89ba3a5/album/song/upload',data, {
     headers: {
      'accept': 'application/json',
      'Accept-Language': 'en-US,en;q=0.8',
-     'Content-Type': `multipart/form-data; boundary=${data._boundary}`,
+     'Content-Type': `multipart/form-data`,
     }
    })
     .then( ( response ) => {
@@ -70,7 +78,7 @@ let selectedFiles = this.state.selectedFiles;
    for ( let i = 0; i < selectedFiles.length; i++ ) {
     data.append( 'galleryImage', selectedFiles[ i ], selectedFiles[ i ].name );
    }
-axios.post( '/api/profile/multiple-file-upload', data, {
+axios.post( 'http://localhost:3030/multipleUpload', data, {
     headers: {
      'accept': 'application/json',
      'Accept-Language': 'en-US,en;q=0.8',
